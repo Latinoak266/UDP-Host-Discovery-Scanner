@@ -8,7 +8,7 @@ import time
 from ctypes import *
 
 # Subnet to target
-SUBNET = "192.168.126.0/24"
+SUBNET = "<subnet>"
 
 # Magic string we'll check ICMP responses for
 MESSAGE = "PYTHONRULES!"
@@ -137,7 +137,7 @@ if __name__ == "__main__":
     if len(sys.argv) == 2:
         host = sys.argv[1]
     else:
-        host = "192.168.126.131"
+        host = "<host ip>"
 
     s = Scanner(host)
 
